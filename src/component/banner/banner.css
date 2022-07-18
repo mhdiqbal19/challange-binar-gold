@@ -1,0 +1,56 @@
+.container-banner{
+    background: #F1F3FF;
+}
+.Row{
+    display: flex;
+    justify-content: space-between;
+}
+.col-right{
+    padding: 0px;
+}
+.col-left{
+    padding-top: 200px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 50px;
+}
+.col-left h1{
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 130%;
+}
+.col-left p{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 30px;
+
+}
+.col-left button{
+    width: 140px;
+    height: 36px;
+    margin-top: 10px;
+
+    background: #5CB85F;
+    border-radius: 5px;
+    color: #F1F3FF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+.col-right img{
+    width: 100%;
+    margin-top: 145px;
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 600px)
+{
+    .col-right img{
+        margin-top: 10px;
+    }
+    .col-left{
+        padding-top: 100px;
+    }
+}
+

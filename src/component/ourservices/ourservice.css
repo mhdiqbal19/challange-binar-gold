@@ -1,0 +1,20 @@
+.row-service{
+    margin-top: 100px;
+    height: 500px;
+}
+
+.col-right-service p{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.col-right-service li{
+    line-height:35px;
+}
+
+@media screen and (max-device-width: 500px)
+and (orientation: portrait) {
+    .col-left-service img {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,28 @@
+.container-whyuse{
+    margin-top: 50px;
+}
+.row-whyuse{
+    justify-content: center;
+}
+.card-icon{
+    margin-bottom: 20px;
+    color: rgb(48, 48, 209);
+}
+.card p{
+    font-size: 13px;
+}
+
+
+
+@media screen and (max-device-width: 600px)
+ {
+    .container-whyuse{
+        margin-top: 450px;
+    }
+    .judul-whyus{
+        text-align: center;
+    }
+    .col-md-3{
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,20 @@
+.container-footer{
+    margin-top: 50px;
+}
+.content-footer-col-1 h6{
+    font-size: 13px;
+}
+.content-footer-col-2 p{
+    font-size: 13px;
+    color: black;
+    
+}
+.content-footer-col-2 a{
+    text-decoration: none;
+}
+.content-footer-connect, footer-copyright, h6{
+    font-size: 13px;
+}
+.content-footer-connect p{
+    color: #0D28A6;
+}
