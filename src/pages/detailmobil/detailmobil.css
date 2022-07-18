@@ -1,0 +1,87 @@
+.container-detail-mobil{
+    margin-top: 100px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.container-judul h3{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    gap: 32px;
+    overflow-y: hidden;
+    justify-content: center;
+
+}
+.container-card{
+    display: flex;
+    gap: 32px;
+    overflow-y: hidden;
+    justify-content: center;
+}
+.card-detail-mobil-right{
+    border-radius: 8px;
+    box-shadow: 1.0463px 6.27781px 12.3891px rgb(0 0 0 / 5%);
+    border: 2px solid #f0f0f0;
+    width: 350px;
+    height: 400px;
+    min-width: 252px;
+}
+.totalBayar{
+    padding-top: 50px;
+    text-align: end;
+}
+.card-detail-mobil-left{
+    border-radius: 8px;
+    box-shadow: 1.0463px 6.27781px 12.3891px rgb(0 0 0 / 5%);
+    border: 2px solid #f0f0f0;
+    width: 720px;
+    height: 700px;
+    line-height: 25px;
+    font-size: 14px;
+    color:darkgray;
+}
+.img-card img{
+    position: relative;   
+    padding-left: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-width: 100%;
+    margin-bottom: 1px;
+}
+.img-card{
+    text-align: center;
+    padding-top: 30px;
+}
+.content-card{
+    padding: 16px;
+    padding-top: 0px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+.container-card h1{
+    font-size: 16px;
+    padding-top: 8px;
+    font-weight: 600;
+    color: black;
+    padding-bottom: 0rem;
+}
+.container-card h3{
+    font-size: 14px;
+    padding-top: 8px;
+    font-weight: 600;
+    color: black;
+    padding-bottom: 0rem;
+}
+
+.container-card p{
+    padding-top: 0rem;
+    font-size: 14px;
+    line-height: 140%;
+    padding-bottom: 3px;
+}
