@@ -12,7 +12,6 @@ export default function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/carimobil" element={<CariMobil/>}/>
           <Route path="/detailmobil" element={<Detailmobil/>}/>
-
       </Routes>
     </BrowserRouter>
 

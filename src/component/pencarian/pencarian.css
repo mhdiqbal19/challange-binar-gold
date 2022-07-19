@@ -1,16 +1,13 @@
-.container-search{
+.goup-search{
     background-color: white;
     border-radius: 5px;
     box-shadow: 1.0463px 6.27781px 12.3891px rgb(0 0 0 / 5%);
     border: 2px solid #f0f0f0;
     height: 100px;
     padding-top: 10px;
-    margin-top: 500px;
-    margin-left: 123px;
     position: absolute;
-    width: 100%;
-    max-width: 1100px;
-    padding-left: 70px;
+    width: 90%;
+    margin-top: 480px;
 }
 .footer-cm{
     margin-top: 150px;

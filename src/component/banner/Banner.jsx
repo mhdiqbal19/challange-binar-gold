@@ -8,17 +8,21 @@ function banner() {
     <section id="banner">
       <Container fluid className="container-banner">
           <Row className="Row">
-            <div className="col-md-6 col-left">
-                  <h1>Sewa & Rental Mobil Terbaik di kawasan Yogyakarta</h1>
-                  <p>
-                    Selamat datang di Binar Car Rental. Kami menyediakan mobil
-                    kualitas terbaik dengan harga terjangkau. Selalu siap melayani
-                    kebutuhanmu untuk sewa mobil selama 24 jam.
-                  </p>
-                  <a href="/carimobil"> <button>Mulai Sewa Mobil</button></a>
+            <div className="col-md-6">
+              <div className="col-left">
+                    <h1>Sewa & Rental Mobil Terbaik di kawasan Yogyakarta</h1>
+                    <p>
+                      Selamat datang di Binar Car Rental. Kami menyediakan mobil
+                      kualitas terbaik dengan harga terjangkau. Selalu siap melayani
+                      kebutuhanmu untuk sewa mobil selama 24 jam.
+                    </p>
+                    <a href="/carimobil"> <button>Mulai Sewa Mobil</button></a>
+              </div>
             </div>
-            <div className="col-md-6 col-right">
-              <img src={imgCar} alt="" />
+            <div className="col-md-6">
+              <div className="col-right">
+                <img src={imgCar} alt="" />
+              </div>
             </div>
           </Row>
       </Container>

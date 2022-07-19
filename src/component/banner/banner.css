@@ -1,11 +1,15 @@
 .container-banner{
     background: #F1F3FF;
-}
-.Row{
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
 }
 .col-right{
+    padding: 0px;
+}
+.col-right img{
+    width: 100vh;
+    margin-top: 145px;
+}
+.col-md-6{
     padding: 0px;
 }
 .col-left{
@@ -15,7 +19,7 @@
     padding-right: 50px;
 }
 .col-left h1{
-    font-weight: 900;
+    font-weight: 900px;
     font-size: 30px;
     line-height: 130%;
 }
@@ -30,7 +34,6 @@
     width: 140px;
     height: 36px;
     margin-top: 10px;
-
     background: #5CB85F;
     border-radius: 5px;
     color: #F1F3FF;
@@ -38,10 +41,7 @@
     font-size: 14px;
     line-height: 20px;
 }
-.col-right img{
-    width: 100%;
-    margin-top: 145px;
-}
+
 
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 600px)
