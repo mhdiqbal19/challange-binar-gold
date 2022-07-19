@@ -15,7 +15,7 @@ function banner() {
                     kualitas terbaik dengan harga terjangkau. Selalu siap melayani
                     kebutuhanmu untuk sewa mobil selama 24 jam.
                   </p>
-                  <button>Mulai Sewa Mobil</button>
+                  <a href="/carimobil"> <button>Mulai Sewa Mobil</button></a>
             </div>
             <div className="col-md-6 col-right">
               <img src={imgCar} alt="" />

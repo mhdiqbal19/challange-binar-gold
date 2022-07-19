@@ -13,8 +13,8 @@ export const CariMobil = () => {
       <Header/>
       <Pencarian/>
       <Banner />
-      {/* <Listmobil/> */}
-      <Detailmobil/>
+      <Listmobil/>
+      {/* <Detailmobil/> */}
       <div className='footer-cm'>
           <Footer/>
       </div>

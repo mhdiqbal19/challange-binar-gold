@@ -11,7 +11,7 @@ function Faq() {
           <div className="content-faq">
             <h3>Sewa Mobil di Yogyakarta Sekarang</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi corrupti pariatur impedit omnis accusantium sequi modi neque voluptatem, corporis porro?</p>
-            <button>Mulai Sewa Mobil</button>
+            <a href="/carimobil"><button>Mulai Sewa Mobil</button></a>
           </div>
          <div className="col-md-5">
               <div className='content-faq-left'> 

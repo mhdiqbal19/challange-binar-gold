@@ -17,7 +17,7 @@ function Whyuse() {
             <h5>Why Use?</h5>
             <p>Mengapa harus pilih Binar Car Rental?</p>
         </div>
-        <div className="col-md-3">
+        <div className="col-md-3 col-whyus">
             <Card>
                 <Card.Body>
                 <div className='card-icon'><BsFillHandThumbsUpFill/></div>
@@ -26,7 +26,7 @@ function Whyuse() {
                 </Card.Body>
             </Card>
         </div>
-        <div className="col-md-3">
+        <div className="col-md-3 col-whyus">
             <Card>
                 <Card.Body>
                     <div className='card-icon'><BsTagFill/></div>
@@ -37,7 +37,7 @@ function Whyuse() {
                 </Card.Body>
             </Card>
         </div>        
-        <div className="col-md-3">
+        <div className="col-md-3 col-whyus">
             <Card>
                 <Card.Body>
                     <div className='card-icon'><BsAlarmFill/></div>
@@ -48,7 +48,7 @@ function Whyuse() {
                 </Card.Body>
             </Card>
         </div>        
-        <div className="col-md-3">
+        <div className="col-md-3 col-whyus">
             <Card>
                 <Card.Body>
                     <div className='card-icon'><BsBookmarkStarFill/></div>

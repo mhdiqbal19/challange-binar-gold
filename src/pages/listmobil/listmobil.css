@@ -18,12 +18,12 @@
     overflow-y: hidden;
     justify-content: center;
 }
-.card{
+.card-list-mobil{
     border-radius: 8px;
     box-shadow: 1.0463px 6.27781px 12.3891px rgb(0 0 0 / 5%);
     border: 2px solid #f0f0f0;
-    width: 344px;
     min-width: 252px;
+    margin-top: 10px;
 }
 .img-card img{
     position: relative;   
@@ -49,7 +49,7 @@
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
 }
-.container-card h1{
+.container-list-mobil h1{
     font-size: 16px;
     padding-top: 8px;
     font-weight: 600;

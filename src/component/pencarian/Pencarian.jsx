@@ -5,6 +5,7 @@ import { Container, Col, Form, Row } from 'react-bootstrap'
 const Pencarian = () => {
   return (
     <Container className='container-pencarian'>
+        <Row>
         <div className='container-search'>
             <div className="headerSearch">
             <Row className="mb-3">
@@ -42,6 +43,7 @@ const Pencarian = () => {
             </Row>
             </div>              
         </div>
+        </Row>
     </Container>
   )
 }
