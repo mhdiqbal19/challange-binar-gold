@@ -14,7 +14,7 @@ export const CariMobil = () => {
       <Pencarian/>
       <Banner />
       <Listmobil/>
-      {/* <Detailmobil/> */}
+      <Detailmobil/>
       <div className='footer-cm'>
           <Footer/>
       </div>

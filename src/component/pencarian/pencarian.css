@@ -6,8 +6,10 @@
     height: 100px;
     padding-top: 10px;
     position: absolute;
-    width: 90%;
+    width: 100%;
+    max-width: 1024px;
     margin-top: 480px;
+    margin-left: 60px;
 }
 .footer-cm{
     margin-top: 150px;
