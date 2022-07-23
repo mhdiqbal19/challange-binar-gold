@@ -1,4 +1,3 @@
-import AVT from "./../../assets/default.png"
 
 const strList = [
     "Sewa Mobil Dengan Supir di Bali 12 Jam", 
@@ -30,24 +29,32 @@ const navList = [
 
   const dataTestimoni = [
     {
-        avatar: AVT,
+        avatar: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
         name: 'Yusaq',
-        review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nostrum.'
+        review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nostrum.',
+        umur: 32,
+        alamat: "Bogor"
     },
     {
-        avatar: AVT,
+        avatar: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
         name: 'Ikhlasul',
-        review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nostrum.'
+        review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nostrum.',
+        umur: 32,
+        alamat: "Surabaya"
     },
     {
-        avatar: AVT,
+        avatar: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
         name: 'Tri Bagus',
-        review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nostrum.'
+        review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nostrum.',
+        umur: 32,
+        alamat: "Bogor"
     },
     {
-        avatar: AVT,
+        avatar: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
         name: 'Dwi Pamungkas',
-        review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nostrum.'
+        review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nostrum.',
+        umur: 32,
+        alamat: "Jaksel"
     }
 ];
 

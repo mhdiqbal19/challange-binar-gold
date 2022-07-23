@@ -4,13 +4,11 @@ import { Nav, Navbar, Container } from 'react-bootstrap';
 
 function Header(props) {
   
-  const {
-    navList,
-  } = props;
+  const { navList } = props;
 
   return (
     <section id="navbar">
-      <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top" >
+      <Navbar collapseOnSelect expand="lg" variant="light" className="navbar-header">
         <Container> 
           <Navbar.Brand href="#header">
             <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Biaya_bootcamp_binar_academy_6.original.png" alt="" className="img-logo"/>

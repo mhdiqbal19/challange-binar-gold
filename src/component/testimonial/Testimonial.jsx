@@ -4,6 +4,7 @@ import {Container, Row} from 'react-bootstrap';
 
 import { Autoplay, Pagination, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { BsFillStarFill } from "react-icons/bs";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -45,15 +46,21 @@ function Testimonial(props) {
                 >
 
                     {
-                        dataTestimoni.map(({ avatar, name, review }, index) => {
+                        dataTestimoni.map(({ avatar, name, review, umur, alamat}, index) => {
                             return (
                                 <SwiperSlide className='testimonial'>
                                     <div className='client_avatar'>
                                         <img src={avatar} alt="Avatar One" />
                                     </div>
                                     <div className='client__content'>
-                                    <h5 className='client__name'>{name}</h5>
-                                    <small className='client__review'>{review}</small>
+                                    <div className="star">
+                                    <BsFillStarFill/><BsFillStarFill/>
+                                    <BsFillStarFill/><BsFillStarFill/>
+                                    <BsFillStarFill/>
+                                    </div>
+                                    
+                                    <h6 className='client__review mt-2'>"{review}"</h6>
+                                    <small className='client__name'>{name} {umur}, {alamat}</small>
                                     </div>
                                 </SwiperSlide>
                             )

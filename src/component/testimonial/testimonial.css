@@ -6,14 +6,11 @@
     margin-top: 100px;
     text-align: center;
 }
-.client_avatar{
-    width: 8rem;
-    height: 4rem;
-    aspect-ratio: 1/1;
-    overflow: hidden;
-    border-radius: 50%;
-    margin: 0 auto 1rem;
-    border: 0.1rem solid rgb(156, 160, 224);
+.client__review{
+    font-size: 12px;
+}
+.client_avatar img{
+    width: 50px;
 }
 .client__content{
     font-size: 13px;
@@ -37,6 +34,9 @@
 }
 .swiper-pagination-clickable .swiper-pagination-bullet{
     background: blue;
+}
+.star{
+    color: gold;
 }
 
 @media screen and (max-width: 600px) {
