@@ -6,6 +6,7 @@ import Detailmobil from "./pages/detailmobil/Detailmobil";
 
 
 export default function App() {
+
   return (
     <BrowserRouter>
       <Routes>

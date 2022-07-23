@@ -2,6 +2,7 @@ import React from 'react'
 import'./pencarian.css'
 import { Container, Col, Form, Row } from 'react-bootstrap'
 
+
 const Pencarian = () => {
   return (
     <Container>
@@ -37,7 +38,7 @@ const Pencarian = () => {
                     </Form.Select>
                     </Form.Group>
                     <Form.Group as={Col}>
-                    <button  className="btnCari">Cari Mobil</button>
+                    <button className="btnCari">Cari Mobil</button>
                     </Form.Group>
                 </Row>           
             </div>

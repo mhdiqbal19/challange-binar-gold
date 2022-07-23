@@ -32,7 +32,7 @@
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 600px)
 {
-    .container-search{
-        display: none;
+    .container-pencarian{
+       display: none; 
     }
 }

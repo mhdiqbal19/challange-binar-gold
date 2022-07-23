@@ -5,16 +5,22 @@ import Footer from '../../component/footer/Footer'
 import './carimobil.css';
 import Listmobil from '../listmobil/Listmobil'
 import Pencarian from '../../component/pencarian/Pencarian';
-import Detailmobil from '../detailmobil/Detailmobil';
+import { navList } from '../../component/dataStatic/dataStatic';
+
+
 
 export const CariMobil = () => {
+
+  const props = {
+    navList
+  }
+
   return (
     <div>
-      <Header/>
+      <Header {...props}/>
       <Pencarian/>
       <Banner />
       <Listmobil/>
-      <Detailmobil/>
       <div className='footer-cm'>
           <Footer/>
       </div>

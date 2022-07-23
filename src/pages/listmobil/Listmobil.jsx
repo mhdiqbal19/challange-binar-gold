@@ -11,13 +11,14 @@ const Listmobil = () => {
   useEffect(() => {
       retriveCar()
   }, [])
+   
 
   const retriveCar = async () => {
     try {
       const { data } = await axios.get('https://bootcamp-rent-car.herokuapp.com/admin/car')
       setCars(data)
     } catch (error) {
-      console.log(error, '<== error car')
+      console.log(error, '<== error get car')
     }
   
   }
@@ -27,6 +28,8 @@ const Listmobil = () => {
       { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }
     ).format(money);
   }
+
+
 
   return (
     <Container className='container-list-mobil'>

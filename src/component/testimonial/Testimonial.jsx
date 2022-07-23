@@ -1,39 +1,18 @@
 import React from 'react'
 import './testimonial.css';
-import avt1 from './../../../src/assets/default.png';
 import {Container, Row} from 'react-bootstrap';
 
-import { Pagination, Navigation } from 'swiper';
+import { Autoplay, Pagination, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-const data = [
-    {
-        avatar: avt1,
-        name: 'Yusaq',
-        review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nostrum.'
-    },
-    {
-        avatar: avt1,
-        name: 'Ikhlasul',
-        review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nostrum.'
-    },
-    {
-        avatar: avt1,
-        name: 'Tri Bagus',
-        review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nostrum.'
-    },
-    {
-        avatar: avt1,
-        name: 'Dwi Pamungkas',
-        review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nostrum.'
-    }
-];
 
-function Testimonial() {
+
+function Testimonial(props) {
+  const {dataTestimoni} = props;
   return (
     <section id='testimonial'>
         <Container>
@@ -42,11 +21,22 @@ function Testimonial() {
                     <h5>Testimonial</h5>
                     <p>Berbagai review positif dari para pelanggan kami</p>
                 </div>
-                <Swiper className="container testimonials__container"
+                <Swiper className="container testimonials__container" 
                     // install Swiper modules
-                    modules={[Pagination, Navigation]}
+                    breakpoints={{
+                        576: {
+                        width: 576,
+                        slidesPerView: 1,
+                        },
+                        768: {
+                        width: 350,
+                        slidesPerView: 1,
+                        },
+                    }}
+                    autoplay={{ delay: 2500 }}
+                    modules={[Autoplay, Pagination, Navigation]}
                     spaceBetween={40}
-                    slidesPerView={1}
+ //                   slidesPerView={3}
                     navigation
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
@@ -55,14 +45,16 @@ function Testimonial() {
                 >
 
                     {
-                        data.map(({ avatar, name, review }, index) => {
+                        dataTestimoni.map(({ avatar, name, review }, index) => {
                             return (
                                 <SwiperSlide className='testimonial'>
                                     <div className='client_avatar'>
                                         <img src={avatar} alt="Avatar One" />
                                     </div>
+                                    <div className='client__content'>
                                     <h5 className='client__name'>{name}</h5>
                                     <small className='client__review'>{review}</small>
+                                    </div>
                                 </SwiperSlide>
                             )
                         })

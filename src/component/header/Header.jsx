@@ -2,7 +2,12 @@ import React from "react";
 import "./header.css";
 import { Nav, Navbar, Container } from 'react-bootstrap';
 
-function Header() {
+function Header(props) {
+  
+  const {
+    navList,
+  } = props;
+
   return (
     <section id="navbar">
       <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top" >
@@ -15,10 +20,10 @@ function Header() {
             <Nav className="me-auto">
             </Nav>
             <Nav>
-              <Nav.Link href="#ourservices">Our Services</Nav.Link>
-              <Nav.Link href="#whyuse">Why Use</Nav.Link>
-              <Nav.Link href="#testimonial">Testimonial</Nav.Link>
-              <Nav.Link href="#faq">FAQ</Nav.Link>
+              {navList.map((item)=> (
+                <Nav.Link href={item.link}>{item.judul}</Nav.Link>
+              ))}
+
             </Nav>
           </Navbar.Collapse>
         </Container>

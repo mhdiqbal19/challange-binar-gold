@@ -3,12 +3,12 @@
     height: 500px;
 }
 .col-left-service{
-    padding-left: 100px;
+    padding-left: 50px;
 }
 
 .col-right-service p{
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-right: 50px;
 }
 .col-right-service li{
@@ -20,5 +20,15 @@ and (orientation: portrait) {
     .col-left-service img {
         margin-bottom: 20px;
         width: 100%;
+    }
+    .col-right-service{
+        padding: 20px;
+    }
+    .col-left-service{
+        padding: 0px;
+        margin: 10px;
+    }
+    .col-right-service ul{
+        padding: 0px;
     }
 }
