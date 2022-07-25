@@ -5,6 +5,7 @@ import Footer from '../../component/footer/Footer'
 import Pencarian from '../../component/pencarian/Pencarian';
 import './carimobil.css';
 import { navList } from '../../component/dataStatic/dataStatic';
+import {useNavigate} from 'react-router-dom';
 
 import {useState, useEffect} from 'react'
 import { Container, Row } from 'react-bootstrap'
@@ -14,6 +15,14 @@ import axios from 'axios'
 
 
 export const CariMobil = () => {
+
+  const navigate = useNavigate();
+
+  const navigateToDetail = (id) => {
+    navigate('/detailMobil');
+    console.log(id);
+  };
+
 
   const [car, setCars] = useState()
 
@@ -37,10 +46,6 @@ export const CariMobil = () => {
     return new Intl.NumberFormat('id-ID',
       { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }
     ).format(money);
-  }
-
-  const detailMobilku = (id) => {
-    console.log(id);
   }
 
   const props = {
@@ -68,7 +73,7 @@ export const CariMobil = () => {
                               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, nulla?</p>
                         </div>
                         <div>
-                          <button className='button' onClick={()=> detailMobilku(cars.id)}>Pilih Mobil</button>
+                        <button className='button' onClick={()=>navigateToDetail(cars.id)}>Pilih Mobil</button>
                         </div>
                     </div>
                 </div>
