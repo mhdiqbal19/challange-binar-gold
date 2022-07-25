@@ -8,10 +8,13 @@ import Pencarian from '../../component/pencarian/Pencarian';
 import Footer from '../../component/footer/Footer';
 import { navList } from '../../component/dataStatic/dataStatic';
 
+
 const Detailmobil = () => {
+
   const props = {
-    navList
+    navList,
   }
+
 
   return (
   <div>
@@ -57,6 +60,7 @@ const Detailmobil = () => {
                 </div>
             </div>
           </div>
+
           <div className='col-md-5'>
             <div class="card-detail-mobil-right">
                 <div class="img-card">
@@ -64,7 +68,7 @@ const Detailmobil = () => {
                 </div>
                 <div class="content-card">
                     <div>
-                        <h3>Innova</h3>
+                        <h3>Name</h3>
                         <small>6 - 8 orang</small>
                         <div className='totalBayar'>
                         <h1>Total : Rp500.000</h1>
@@ -73,6 +77,7 @@ const Detailmobil = () => {
                 </div>
             </div>
           </div>
+
         </Row>
     </Container>
   <Footer/>

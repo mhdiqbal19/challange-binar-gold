@@ -8,7 +8,7 @@ import { navList } from '../../component/dataStatic/dataStatic';
 
 import {useState, useEffect} from 'react'
 import { Container, Row } from 'react-bootstrap'
-import CarInova from './../../assets/image 1.png'
+
 import axios from 'axios'
 
 
@@ -32,10 +32,15 @@ export const CariMobil = () => {
   
   }
 
+
   const formatRupiah = (money) => {
     return new Intl.NumberFormat('id-ID',
       { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }
     ).format(money);
+  }
+
+  const detailMobilku = (id) => {
+    console.log(id);
   }
 
   const props = {
@@ -53,7 +58,7 @@ export const CariMobil = () => {
               <div className="col-md-4">
                 <div class="card-list-mobil">
                     <div class="img-card">
-                        <img src={CarInova} alt="img-mobil"/>
+                        <img src={cars.image} alt="img-mobil"/>
                     </div>      
                     <div class="content-card">
                         <div>
@@ -63,7 +68,7 @@ export const CariMobil = () => {
                               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, nulla?</p>
                         </div>
                         <div>
-                          <button className='button'>Pilih Mobil</button>
+                          <button className='button' onClick={()=> detailMobilku(cars.id)}>Pilih Mobil</button>
                         </div>
                     </div>
                 </div>
@@ -77,3 +82,4 @@ export const CariMobil = () => {
     </div>
   )
 }
+

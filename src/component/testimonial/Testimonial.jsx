@@ -37,7 +37,7 @@ function Testimonial(props) {
                     autoplay={{ delay: 2500 }}
                     modules={[Autoplay, Pagination, Navigation]}
                     spaceBetween={40}
- //                   slidesPerView={3}
+ //                 slidesPerView={3}
                     navigation
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
@@ -57,8 +57,7 @@ function Testimonial(props) {
                                     <BsFillStarFill/><BsFillStarFill/>
                                     <BsFillStarFill/><BsFillStarFill/>
                                     <BsFillStarFill/>
-                                    </div>
-                                    
+                                    </div>                 
                                     <h6 className='client__review mt-2'>"{review}"</h6>
                                     <small className='client__name'>{name} {umur}, {alamat}</small>
                                     </div>
