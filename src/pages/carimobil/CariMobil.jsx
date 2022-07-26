@@ -5,49 +5,49 @@ import Footer from '../../component/footer/Footer'
 import Pencarian from '../../component/pencarian/Pencarian';
 import './carimobil.css';
 import { navList } from '../../component/dataStatic/dataStatic';
-import {useNavigate} from 'react-router-dom';
-
-import {useState, useEffect} from 'react'
+import {Link} from 'react-router-dom';
 import { Container, Row } from 'react-bootstrap'
-
+import {useState, useEffect} from 'react'
 import axios from 'axios'
 
 
 
 export const CariMobil = () => {
 
-  const navigate = useNavigate();
-
-  const navigateToDetail = (id) => {
-    navigate('/detailMobil');
-    console.log(id);
-  };
-
-
-  const [car, setCars] = useState()
+ 
+  //consium api list mobil
+  const [data, setData] = useState([])
 
   useEffect(() => {
-      retriveCar()
+    axios
+      .get("https://bootcamp-rent-car.herokuapp.com/admin/car")
+      .then((res) => setData(res.data))
+      .catch((err) => console.log(err))
   }, [])
+
+  // useEffect(() => {
+  //     retriveCar()
+  // }, [])
    
-
-  const retriveCar = async () => {
-    try {
-      const { data } = await axios.get('https://bootcamp-rent-car.herokuapp.com/admin/car')
-      setCars(data)
-    } catch (error) {
-      console.log(error, '<== error get car')
-    }
+  // const retriveCar = async () => {
+  //   try {
+  //     const { data } = await axios.get('https://bootcamp-rent-car.herokuapp.com/admin/car')
+  //     setData(data)
+  //   } catch (error) {
+  //     console.log(error, '<== error get car')
+  //   }
   
-  }
+  // }
 
 
+  //formating indonesia rupiah
   const formatRupiah = (money) => {
     return new Intl.NumberFormat('id-ID',
       { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }
     ).format(money);
   }
 
+  
   const props = {
     navList
   }
@@ -59,7 +59,7 @@ export const CariMobil = () => {
       <Banner />
       <Container className='container-list-mobil'>
         <Row>
-          {car && car.map((cars) => (
+          {!!data.length && data.map((cars) => (
               <div className="col-md-4">
                 <div class="card-list-mobil">
                     <div class="img-card">
@@ -73,7 +73,9 @@ export const CariMobil = () => {
                               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, nulla?</p>
                         </div>
                         <div>
-                        <button className='button' onClick={()=>navigateToDetail(cars.id)}>Pilih Mobil</button>
+                        <Link to={`/detailmobil/${cars.id}`}>
+                        <button className='button'>Pilih Mobil</button>
+                        </Link>
                         </div>
                     </div>
                 </div>

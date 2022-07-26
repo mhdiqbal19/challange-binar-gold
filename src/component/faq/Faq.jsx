@@ -2,6 +2,7 @@ import React from 'react'
 import {Container, Row} from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 import './faq.css';
+import { Link } from 'react-router-dom';
 
 function Faq() {
   return (
@@ -11,7 +12,9 @@ function Faq() {
           <div className="content-faq">
             <h3>Sewa Mobil di Yogyakarta Sekarang</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi corrupti pariatur impedit omnis accusantium sequi modi neque voluptatem, corporis porro?</p>
-            <a href="/carimobil"><button>Mulai Sewa Mobil</button></a>
+            <Link to={"/carimobil"}>
+            <button>Mulai Sewa Mobil</button>
+            </Link>
           </div>
          <div className="col-md-5">
               <div className='content-faq-left'> 

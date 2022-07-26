@@ -16,7 +16,7 @@
     border-radius: 8px;
     box-shadow: 1.0463px 6.27781px 12.3891px rgb(0 0 0 / 5%);
     border: 2px solid #f0f0f0;
-    height: 400px;
+    height: 500px;
     min-width: 252px;
 }
 .totalBayar{
@@ -37,7 +37,7 @@
     padding-left: 0;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    max-width: 100%;
+    max-width: 90%;
     margin-bottom: 1px;
 }
 .img-card{

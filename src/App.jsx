@@ -12,7 +12,7 @@ export default function App() {
       <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/carimobil" element={<CariMobil/>}/>
-          <Route path="/detailmobil" element={<Detailmobil/>}/>
+          <Route path="/detailmobil/:id" element={<Detailmobil/>}/>
       </Routes>
   );
 }

@@ -11,7 +11,7 @@ function Header(props) {
       <Navbar collapseOnSelect expand="lg" variant="light" className="navbar-header">
         <Container> 
           <Navbar.Brand href="#header">
-            <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Biaya_bootcamp_binar_academy_6.original.png" alt="" className="img-logo"/>
+            <img src="https://s3-ap-southeast-1.amazonaws.com/moladin.assets/blog/wp-content/uploads/2021/10/19135936/Logo-Moladin-Terbaru-001.png" alt="" className="img-logo"/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

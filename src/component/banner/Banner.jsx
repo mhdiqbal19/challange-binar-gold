@@ -2,6 +2,7 @@ import React from "react";
 import "./banner.css";
 import {Container, Row} from 'react-bootstrap';
 import imgCar from "./../../assets/img_car.png"
+import { Link } from "react-router-dom";
 
 function banner() {
   return (
@@ -16,7 +17,10 @@ function banner() {
                       kualitas terbaik dengan harga terjangkau. Selalu siap melayani
                       kebutuhanmu untuk sewa mobil selama 24 jam.
                     </p>
-                    <a href="/carimobil"> <button>Mulai Sewa Mobil</button></a>
+                    
+                    <Link to={"/carimobil"}> 
+                      <button>Mulai Sewa Mobil</button>
+                    </Link>
               </div>
             </div>
             <div className="col-md-6">

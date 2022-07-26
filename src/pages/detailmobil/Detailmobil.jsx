@@ -1,25 +1,43 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Container, Row} from 'react-bootstrap'
 import './detailmobil.css';
-import CarInova from './../../assets/image 1.png'
 import Header from '../../component/header/Header'
 import Banner from '../../component/banner/Banner'
-import Pencarian from '../../component/pencarian/Pencarian';
 import Footer from '../../component/footer/Footer';
 import { navList } from '../../component/dataStatic/dataStatic';
+import { useState } from 'react';
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
 
 
 const Detailmobil = () => {
+  const [car, setCar] = useState({})
 
+  const {id} = useParams();
+//  const id = param.id;
+
+  useEffect(() => {
+    axios
+    .get(`https://bootcamp-rent-car.herokuapp.com/admin/car/${id}`)
+    .then((res) => setCar(res.data))
+    .catch((err) => console.log(err))
+  },[])
+  
   const props = {
     navList,
+  }
+
+   //formating indonesia rupiah
+   const formatRupiah = (money) => {
+    return new Intl.NumberFormat('id-ID',
+      { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }
+    ).format(money);
   }
 
 
   return (
   <div>
   <Header {...props}/>
-  <Pencarian/>
   <Banner/>
     <Container className='container-detail-mobil'>
         <Row class="container-card">
@@ -60,18 +78,18 @@ const Detailmobil = () => {
                 </div>
             </div>
           </div>
-
+          
           <div className='col-md-5'>
             <div class="card-detail-mobil-right">
                 <div class="img-card">
-                    <img src={CarInova} alt="img-mobil"/>
+                    <img src={car.image} alt="img-mobil"/>
                 </div>
                 <div class="content-card">
                     <div>
-                        <h3>Name</h3>
-                        <small>6 - 8 orang</small>
+                        <h3>{car.name}</h3>
+                        <small>{car.category}</small>
                         <div className='totalBayar'>
-                        <h1>Total : Rp500.000</h1>
+                        <h1>Total : {formatRupiah(car.price)}</h1>
                         </div>
                     </div>
                 </div>
