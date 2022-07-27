@@ -6,7 +6,7 @@ import Footer from "../../component/footer/Footer";
 import Ourservices from "../../component/ourservices/Ourservices";
 import Testimonial from "../../component/testimonial/Testimonial";
 import Whyuse from "../../component/whyuse/Whyuse";
-import { navList, dataTestimoni, strList } from '../../component/dataStatic/dataStatic';
+import { navList, dataTestimoni, strList, dataWhyUse } from '../../component/dataStatic/dataStatic';
 
 
 export const Home = () => {
@@ -15,6 +15,7 @@ export const Home = () => {
     navList,
     dataTestimoni,
     strList,
+    dataWhyUse,
   }
 
   return (
@@ -22,7 +23,7 @@ export const Home = () => {
       <Header {...props}/>
       <Banner />
       <Ourservices {...props}/>
-      <Whyuse/>
+      <Whyuse {...props}/>
       <Testimonial {...props}/>
       <Faq/>
       <Footer/>
