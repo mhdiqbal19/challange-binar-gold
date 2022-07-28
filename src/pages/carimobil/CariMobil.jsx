@@ -14,10 +14,12 @@ import axios from 'axios'
 
 export const CariMobil = () => {
 
- 
+
   //consium api list mobil
   const [data, setData] = useState([])
-
+  const [name, setName] = useState("")
+  console.log('ini adalah', name);
+  
   useEffect(() => {
     axios
       .get("https://bootcamp-rent-car.herokuapp.com/admin/car")
@@ -47,19 +49,30 @@ export const CariMobil = () => {
     ).format(money);
   }
 
+  const handleChangeName = (e) =>{
+    setName(e.target.value);
+  } 
+
+  const handleSearch = () => {
+    const newArr = data.filter(item => item.name === name)
+    setData(newArr)
+  }
+
   
   const props = {
-    navList
+    navList,
+    handleChangeName,
+    handleSearch
   }
 
   return (
     <div>
       <Header {...props}/>
-      <Pencarian/>
+      <Pencarian {...props}/>
       <Banner />
       <Container className='container-list-mobil'>
         <Row>
-          {!!data.length && data.map((cars) => (
+          {!!data.length > 0 ? data.map((cars) => (
               <div className="col-md-4">
                 <div class="card-list-mobil">
                     <div class="img-card">
@@ -80,7 +93,7 @@ export const CariMobil = () => {
                     </div>
                 </div>
               </div>
-          ))}
+          )): <p>Loading...</p>}
         </Row>
       </Container>
       <div className='footer-cm'>

@@ -33,7 +33,6 @@ const navList = [
 },
 ];
 
-
 const dataTestimoni = [
   {
       avatar: profil_1,

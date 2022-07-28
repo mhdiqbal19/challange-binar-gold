@@ -73,3 +73,47 @@
     line-height: 140%;
     padding-bottom: 3px;
 }
+
+
+
+.goup-search{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1.0463px 6.27781px 12.3891px rgb(0 0 0 / 5%);
+    border: 2px solid #f0f0f0;
+    height: 100px;
+    padding-top: 10px;
+    position: absolute;
+    width: 100%;
+    max-width: 1024px;
+    margin-top: 480px;
+    margin-left: 60px;
+}
+.footer-cm{
+    margin-top: 150px;
+}
+.searchInput{
+    font-size: 12px;
+}
+.btnCari{
+    width: 100px;
+    height: 30px;
+    margin-top: 32px;
+    background: #5CB85F;
+    border-radius: 5px;
+    color: #F1F3FF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+.pencarian{
+    background-color: #032954;
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 600px)
+{
+    .container-pencarian{
+       display: none; 
+    }
+}
