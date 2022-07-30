@@ -44,14 +44,15 @@
 
 
 /* For Mobile Portrait View */
-@media screen and (max-device-width: 600px)
+@media screen and (max-width: 600px)
 {
     .col-right img{
         margin-top: 10px;
         width: 100%;
     }
     .col-left{
-        padding-top: 100px;
+        padding-top: 50px;
+        padding-left: 30px;
     }
 }
 

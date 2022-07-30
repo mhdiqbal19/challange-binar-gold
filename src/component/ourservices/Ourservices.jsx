@@ -20,7 +20,7 @@ function Ourservices(props) {
             <p>Sewa mobil di Yogyakarta bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
             <ul> 
               {strList.map((item)=> (
-                <li><BsFillCheckCircleFill/> {item}</li>
+                <li><BsFillCheckCircleFill className="icon-ourService"/> {item}</li>
               ))}  
             </ul>
           </div>

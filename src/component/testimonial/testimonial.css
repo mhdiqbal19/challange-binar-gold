@@ -7,13 +7,17 @@
     text-align: center;
 }
 .client__review{
-    font-size: 12px;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 30;
+    display: block;
+    width: 100%;
 }
 .client_avatar img{
-    width: 50px;
+    width: 60px;
 }
 .client__content{
-    font-size: 13px;
+    font-size: 14px;
     padding-left: 20px;
 }
 .testimonial{
@@ -24,16 +28,21 @@
     border-radius: 1rem;
     user-select: none;
     margin-top: 20px;
+    width: 100%;
+    width: 350px !important;
+    height: 200px !important;
 }
-.client_review{
-    color: royalblue;
-    font-weight: 300;
-    display: block;
-    width: 80%;
-    margin: 0.8rem auto 0;
-}
+
 .swiper-pagination-clickable .swiper-pagination-bullet{
-    background: blue;
+    display: none;
+}
+.prev-next{
+    display: flex;
+    justify-content: center;
+    color: #5CB85F;
+}
+.prev{
+    margin-right: 10px;
 }
 .star{
     color: gold;

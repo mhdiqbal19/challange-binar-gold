@@ -11,7 +11,7 @@ const Pencarian = (props) => {
         <Row className='container-pencarian'>
             <div className='goup-search'>
                 <Row>
-                    <Form.Group as={Col}>
+                    <Form.Group as={Col} className="form-group">
                     <Form.Label>Nama Mobil</Form.Label>
                     <Form.Control type="text" placeholder="Ketik nama/tipe mobil" className='searchInput' onChange={(e)=>handleChangeName(e)}/>
                     </Form.Group>
@@ -36,8 +36,8 @@ const Pencarian = (props) => {
                     <Form.Group as={Col}>
                     <Form.Label>Status</Form.Label>
                     <Form.Select defaultValue="Choose..." className='searchInput'>
-                        <option>True</option>
-                        <option>False</option>
+                        <option>Tersedia</option>
+                        <option>Disewa</option>
                     </Form.Select>
                     </Form.Group>
                     <Form.Group as={Col}>

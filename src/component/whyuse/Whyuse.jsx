@@ -22,8 +22,7 @@ function Whyuse(props) {
                     <Card>
                         <Card.Body>
                         <div className='card-icon'>
-                            <img src={icon} alt="" />
-                            
+                            <img src={icon} alt="" />                           
                         </div>
                         <h6>{title}</h6>
                         <p>{content}</p>

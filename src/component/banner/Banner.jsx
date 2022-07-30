@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./banner.css";
 import {Container, Row} from 'react-bootstrap';
 import imgCar from "./../../assets/img_car.png"
 import { Link } from "react-router-dom";
 
-function banner() {
+const Banner = () => {
+
+  const [btnShow, setBtnShow] = useState(false)
+
+  const handleButtonShow = () => {
+    setBtnShow(true)
+  }
+  console.log('ini buton', btnShow);
+
   return (
     <section id="banner">
       <Container fluid className="container-banner">
@@ -19,7 +27,7 @@ function banner() {
                     </p>
                     
                     <Link to={"/carimobil"}> 
-                      <button>Mulai Sewa Mobil</button>
+                     {!btnShow ? <button onClick={handleButtonShow} >Mulai Sewa Mobil</button> : ''}        
                     </Link>
               </div>
             </div>
@@ -31,7 +39,8 @@ function banner() {
           </Row>
       </Container>
     </section>
-  );
+  )
 }
 
-export default banner;
+export default Banner
+
