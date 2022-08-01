@@ -3,7 +3,6 @@
     width: 100%;
     margin-bottom: 10px;
 }
-
 .container-judul h3{
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -69,7 +68,6 @@
     color: black;
     padding-bottom: 0rem;
 }
-
 .container-detail-mobil p{
     padding-top: 0rem;
     font-size: 14px;
@@ -77,8 +75,8 @@
     padding-bottom: 3px;
 }
 
-/* For Mobile Portrait View */
-@media screen and (max-device-width: 600px)
+/* For Mobile View */
+@media screen and (max-width: 600px)
 {
     .card-detail-mobil-right{
         margin-top: 10px;

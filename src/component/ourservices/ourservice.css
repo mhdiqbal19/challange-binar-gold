@@ -20,7 +20,7 @@
 
 
 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 600px)
 and (orientation: portrait) {
     .col-left-service img {
         margin-bottom: 20px;

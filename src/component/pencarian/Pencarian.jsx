@@ -35,7 +35,7 @@ const Pencarian = (props) => {
                     </Form.Group>
                     <Form.Group as={Col}>
                     <Form.Label>Status</Form.Label>
-                    <Form.Select defaultValue="Choose..." className='searchInput'>
+                    <Form.Select defaultValue="Choose..." className='searchInput' disabled>
                         <option>Tersedia</option>
                         <option>Disewa</option>
                     </Form.Select>

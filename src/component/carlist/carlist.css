@@ -3,7 +3,6 @@
     width: 100%;
     margin-bottom: 10px;
 }
-
 .container-judul h3{
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -66,16 +65,12 @@
     font-size: 14px;
     line-height: 20px;
 }
-
 .container-card p{
     padding-top: 0rem;
     font-size: 14px;
     line-height: 140%;
     padding-bottom: 3px;
 }
-
-
-
 .goup-search{
     background-color: white;
     border-radius: 5px;
@@ -110,8 +105,8 @@
     background-color: #032954;
 }
 
-/* For Mobile Portrait View */
-@media screen and (max-device-width: 600px)
+/* For Mobile View */
+@media screen and (max-width: 600px)
 {
     .container-pencarian{
        display: none; 

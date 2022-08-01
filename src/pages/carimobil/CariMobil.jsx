@@ -13,13 +13,12 @@ import CarList from '../../component/carlist/CarList';
 
 export const CariMobil = () => {
 
-
   //consium api list mobil
   const [data, setData] = useState([])
   const [fdata, setFdata] = useState([])
   const [name, setName] = useState("")
   const [notFound, setNotFound ] = useState(false)
-  console.log('ini adalah', name);
+  // console.log('ini adalah', name);
   
   useEffect(() => {
     axios
@@ -28,6 +27,7 @@ export const CariMobil = () => {
       .catch((err) => console.log(err))
   }, [])
 
+  // consium api for asnc
   // useEffect(() => {
   //     retriveCar()
   // }, [])
@@ -39,11 +39,11 @@ export const CariMobil = () => {
   //   } catch (error) {
   //     console.log(error, '<== error get car')
   //   }
-  
   // }
 
 
   //formating indonesia rupiah
+  
   const formatRupiah = (money) => {
     return new Intl.NumberFormat('id-ID',
       { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }
@@ -66,8 +66,8 @@ export const CariMobil = () => {
       setFdata(newArr)    
   }
 
-  console.log("ini data", data);
-  console.log("ini fdata", fdata);
+  // console.log("ini data", data);
+  // console.log("ini fdata", fdata);
   
   const props = {
     navList,

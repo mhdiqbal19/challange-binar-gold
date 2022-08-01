@@ -38,7 +38,7 @@
     margin-top: 50px;
 }
 
-
+/* For Mobile View */
 @media screen and (max-width: 600px)
  {
     .content-faq{
@@ -59,6 +59,5 @@
     .col-md-5{
         margin-top: 10px;
     }
- 
 }
    

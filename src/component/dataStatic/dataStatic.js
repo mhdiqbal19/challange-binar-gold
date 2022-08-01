@@ -2,7 +2,6 @@ import icon1 from './../../assets/icon_complete.png'
 import icon2 from './../../assets/icon_price.png'
 import icon3 from './../../assets/icon_24hrs.png'
 import icon4 from './../../assets/icon_professional.png'
-
 import profil_1 from './../../assets/profil-1.png'
 import profil_2 from './../../assets/profil-2.png'
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "./banner.css";
 import {Container, Row} from 'react-bootstrap';
 import imgCar from "./../../assets/img_car.png"
@@ -6,12 +6,8 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
 
-  const [btnShow, setBtnShow] = useState(false)
+  const [btnShow, setBtnShow] = useState(true);
 
-  const handleButtonShow = () => {
-    setBtnShow(true)
-  }
-  console.log('ini buton', btnShow);
 
   return (
     <section id="banner">
@@ -27,7 +23,7 @@ const Banner = () => {
                     </p>
                     
                     <Link to={"/carimobil"}> 
-                     {!btnShow ? <button onClick={handleButtonShow} >Mulai Sewa Mobil</button> : ''}        
+                     {btnShow && <button onClick={() => setBtnShow(!btnShow)} className="toggleShow">Mulai Sewa Mobil</button>}        
                     </Link>
               </div>
             </div>

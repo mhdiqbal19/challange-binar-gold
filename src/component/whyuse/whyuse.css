@@ -13,9 +13,9 @@
 }
 
 
-
+/* For Mobile Portrait View */
 @media screen and (max-width: 600px)
- {
+{
     .container-whyuse{
         margin-top: 450px;
     }
