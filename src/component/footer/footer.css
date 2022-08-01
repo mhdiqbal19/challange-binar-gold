@@ -1,5 +1,5 @@
 .container-footer{
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .content-footer-col-1 h6{
     font-size: 13px;
@@ -21,6 +21,6 @@
 @media screen and (max-width: 600px)
 {
     .container-footer{
-        margin-top: 10px;
+        margin-top: 100px;
     }
 }

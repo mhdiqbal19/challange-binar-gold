@@ -3,7 +3,7 @@
 }
 .content-faq{
     color: aliceblue;
-    margin-top: 80px;
+    margin-top: 10px;
     text-align: center;
     padding-top: 100px;
     padding-left: 300px;
@@ -43,7 +43,6 @@
  {
     .content-faq{
         color: aliceblue;
-        margin-top: 50px;
         text-align: center;
         padding-top: 50px;
         padding-left: 10px;
@@ -51,13 +50,11 @@
         background: #0D28A6;
         border-radius: 13px;
         height: 326px;
+        width: 100%;
     }
     .container-faq{
         text-align: center;
-        margin-left: 5px;
-    }
-    .col-md-5{
-        margin-top: 10px;
+        margin: 0px;
     }
 }
    

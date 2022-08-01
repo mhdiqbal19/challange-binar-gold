@@ -1,6 +1,6 @@
-import React from 'react'
 import'./pencarian.css'
 import { Container, Col, Form, Row } from 'react-bootstrap'
+
 
 const Pencarian = (props) => {
 

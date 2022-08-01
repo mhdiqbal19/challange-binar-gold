@@ -1,4 +1,3 @@
-import React from 'react'
 import './testimonial.css';
 import {Container, Row} from 'react-bootstrap';
 import { Autoplay, Pagination, Navigation } from 'swiper';
@@ -54,29 +53,29 @@ function Testimonial(props) {
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}             
                 >
-                    {dataTestimoni.map(({ avatar, name, review, umur, alamat}, index) => {
-                        return (
-                            <SwiperSlide className='testimonial mr-4'>
-                                <div className='client_avatar'>
-                                    <img src={avatar} alt="Avatar One" />
-                                </div>
-                                <div className='client__content'>
-                                    <div className="star">
-                                    <BsFillStarFill/><BsFillStarFill/>
-                                    <BsFillStarFill/><BsFillStarFill/>
-                                    <BsFillStarFill/>
-                                    </div>                 
-                                <h6 className='client__review'>"{review}"</h6>
-                                <small className='client__name'>{name} {umur}, {alamat}</small>
-                                </div>
-                            </SwiperSlide>
-                        )
-                    })}
-                    <div className='prev-next'>
-                        <div ref={prevRef} className="prev"> <BsFillArrowLeftCircleFill size={25} /></div>
-                        <div ref={nextRef} className="next"> <BsFillArrowRightCircleFill size={25} /></div>
-                    </div>
-                </Swiper>
+                {dataTestimoni.map(({ avatar, name, review, umur, alamat}, index) => {
+                    return (
+                        <SwiperSlide className='testimonial mr-4'>
+                            <div className='client_avatar'>
+                                <img src={avatar} alt="Avatar One" />
+                            </div>
+                            <div className='client__content'>
+                                <div className="star">
+                                <BsFillStarFill/><BsFillStarFill/>
+                                <BsFillStarFill/><BsFillStarFill/>
+                                <BsFillStarFill/>
+                                </div>                 
+                            <h6 className='client__review'>"{review}"</h6>
+                            <small className='client__name'>{name} {umur}, {alamat}</small>
+                            </div>
+                        </SwiperSlide>
+                    )
+                })}
+                <div className='prev-next'>
+                    <div ref={prevRef} className="prev"> <BsFillArrowLeftCircleFill size={25} /></div>
+                    <div ref={nextRef} className="next"> <BsFillArrowRightCircleFill size={25} /></div>
+                </div>
+            </Swiper>
             </Row>
         </Container>
     </section>

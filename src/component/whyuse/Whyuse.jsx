@@ -1,7 +1,5 @@
-import React from 'react'
 import './whyuse.css';
-import {Container, Row} from 'react-bootstrap';
-import Card from 'react-bootstrap/Card';
+import {Col, Container, Row, Card} from 'react-bootstrap';
 
 
 function Whyuse(props) {
@@ -12,13 +10,13 @@ function Whyuse(props) {
     <section id="whyuse">
       <Container className='container-whyuse'>
         <Row className="row-whyuse">
-          <div className='judul-whyus mb-4'>
+          <div className='judul-whyus'>
               <h5>Why Use?</h5>
               <p>Mengapa harus pilih Binar Car Rental?</p>
           </div>
           {dataWhyUse.map(({ icon, title, content}, index) => {
             return (
-              <div className="col-md-3 col-whyus">
+              <Col md={3}>
                   <Card>
                       <Card.Body>
                       <div className='card-icon'>
@@ -28,7 +26,7 @@ function Whyuse(props) {
                       <p>{content}</p>
                       </Card.Body>
                   </Card>
-              </div>
+              </Col>
             )
           })}
         </Row>

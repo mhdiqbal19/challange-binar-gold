@@ -1,13 +1,12 @@
-import React from 'react'
 import Header from '../../component/header/Header'
 import Banner from '../../component/banner/Banner'
 import Footer from '../../component/footer/Footer'
 import Pencarian from '../../component/pencarian/Pencarian';
+import CarList from '../../component/carlist/CarList';
 import './carimobil.css';
 import { navList } from '../../component/dataStatic/dataStatic';
 import {useState, useEffect} from 'react'
 import axios from 'axios'
-import CarList from '../../component/carlist/CarList';
 
 
 
@@ -80,7 +79,7 @@ export const CariMobil = () => {
     <div>
       <Header {...props}/>
       <Pencarian {...props}/>
-      <Banner />
+      <Banner/>
       {!!notFound && <h4 className='dataNotFound'>Data is not available!</h4>}
       <CarList data = {!fdata.length ? data : fdata} {...props}/>
       <Footer/>

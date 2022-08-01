@@ -1,4 +1,3 @@
-import React from "react";
 import './ourservice.css';
 import {Container, Row, Col} from 'react-bootstrap';
 import { BsFillCheckCircleFill } from 'react-icons/bs';
@@ -13,7 +12,7 @@ function Ourservices(props) {
       <Container>
         <Row className="row-service">
           <Col md={6} className="col-left-service">
-            <img src={imgSrv} alt="" />
+            <img src={imgSrv} alt=""/>
           </Col>
           <Col md={6} className="col-right-service">
             <h4>Best Car Rental for any kind of trip in Yogyakarta.</h4>

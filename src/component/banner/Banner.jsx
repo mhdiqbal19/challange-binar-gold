@@ -8,23 +8,21 @@ const Banner = () => {
 
   const [btnShow, setBtnShow] = useState(true);
 
-
   return (
     <section id="banner">
       <Container fluid className="container-banner">
           <Row className="Row">
             <Col md={6}>
               <div className="col-left">
-                    <h1>Sewa & Rental Mobil Terbaik di kawasan Yogyakarta</h1>
-                    <p>
-                      Selamat datang di Binar Car Rental. Kami menyediakan mobil
-                      kualitas terbaik dengan harga terjangkau. Selalu siap melayani
-                      kebutuhanmu untuk sewa mobil selama 24 jam.
-                    </p>
-                    
-                    <Link to={"/carimobil"}> 
-                     {btnShow && <button onClick={() => setBtnShow(!btnShow)} className="toggleShow">Mulai Sewa Mobil</button>}        
-                    </Link>
+                <h1>Sewa & Rental Mobil Terbaik di kawasan Yogyakarta</h1>
+                <p>
+                  Selamat datang di Binar Car Rental. Kami menyediakan mobil
+                  kualitas terbaik dengan harga terjangkau. Selalu siap melayani
+                  kebutuhanmu untuk sewa mobil selama 24 jam.
+                </p>                 
+                <Link to={"/carimobil"}> 
+                  {btnShow && <button onClick={() => setBtnShow(!btnShow)} className="toggleShow">Mulai Sewa Mobil</button>}        
+                </Link>
               </div>
             </Col>
             <Col md={6}>
