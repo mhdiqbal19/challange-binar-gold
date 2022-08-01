@@ -18,10 +18,9 @@
     color: #CFD4ED;
 }
 
-
-
+/* For Mobile View */
 @media screen and (max-width: 600px)
-and (orientation: portrait) {
+{
     .col-left-service img {
         margin-bottom: 20px;
         width: 90%;
@@ -31,7 +30,6 @@ and (orientation: portrait) {
     }
     .col-left-service{
         padding: 0px;
-        margin: 10px;
     }
     .col-right-service ul{
         padding: 0px;
