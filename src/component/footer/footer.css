@@ -17,3 +17,10 @@
 .content-footer-connect p{
     color: #0D28A6;
 }
+
+@media screen and (max-width: 600px)
+{
+    .container-footer{
+        margin-top: 10px;
+    }
+}

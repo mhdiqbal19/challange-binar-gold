@@ -9,13 +9,14 @@ const Pencarian = (props) => {
   return (
     <Container>
         <Row className='container-pencarian'>
-            <div className='goup-search'>
-                <Row>
-                    <Form.Group as={Col} className="form-group">
+            <Col sm>
+                <Form.Group className='form__group'>
                     <Form.Label>Nama Mobil</Form.Label>
                     <Form.Control type="text" placeholder="Ketik nama/tipe mobil" className='searchInput' onChange={(e)=>handleChangeName(e)}/>
-                    </Form.Group>
-                    <Form.Group as={Col}>
+                </Form.Group>
+            </Col>
+            <Col sm>
+                <Form.Group className='form__group'>
                     <Form.Label>Kategori</Form.Label>
                     <Form.Select defaultValue="Choose..."  className='searchInput' disabled>
                         <option>Masukan Kapasitas Mobil</option>
@@ -23,8 +24,10 @@ const Pencarian = (props) => {
                         <option>4 - 6 orang</option>
                         <option>6 - 8 orang</option>
                     </Form.Select>
-                    </Form.Group>
-                    <Form.Group as={Col}>
+                </Form.Group>
+            </Col >
+            <Col sm>
+                <Form.Group className='form__group'>
                     <Form.Label>Harga</Form.Label>
                     <Form.Select defaultValue="Choose..."  className='searchInput' disabled>
                         <option>Masukan Harga Sewa per Hari</option>
@@ -32,19 +35,20 @@ const Pencarian = (props) => {
                         <option> Rp.500.000,- </option>
                         <option> Rp.600.000,- </option>
                     </Form.Select>
-                    </Form.Group>
-                    <Form.Group as={Col}>
+                </Form.Group>
+            </Col>
+            <Col sm>
+                <Form.Group className='form__group'>
                     <Form.Label>Status</Form.Label>
                     <Form.Select defaultValue="Choose..." className='searchInput' disabled>
                         <option>Tersedia</option>
                         <option>Disewa</option>
                     </Form.Select>
-                    </Form.Group>
-                    <Form.Group as={Col}>
-                    <button className="btnCari" onClick={handleSearch}>Cari Mobil</button>
-                    </Form.Group>
-                </Row>           
-            </div>
+                </Form.Group>
+            </Col>
+            <Col sm className='btn__cari__mobil'>
+                <button className="btnCari" onClick={handleSearch}>Cari Mobil</button>
+            </Col>
         </Row>
     </Container>
   )

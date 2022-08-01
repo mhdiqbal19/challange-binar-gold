@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Container, Row} from 'react-bootstrap'
 import './detailmobil.css';
 import Header from '../../component/header/Header'

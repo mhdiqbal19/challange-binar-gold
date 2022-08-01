@@ -1,17 +1,19 @@
-.goup-search{
+.container-pencarian{
     background-color: white;
+    max-width: 1115px;
+    width: 100%;
+    position: absolute;
     border-radius: 5px;
     box-shadow: 1.0463px 6.27781px 12.3891px rgb(0 0 0 / 5%);
     border: 2px solid #f0f0f0;
-    height: 100px;
+    height: 110px;
     padding-top: 10px;
-    position: absolute;
-    width: 100%;
-    max-width: 1024px;
     margin-top: 480px;
+    margin-left: 0px;
 }
-.form-group{
-    margin-left: 50px;
+.form__group{
+    width: 225px;
+    margin-top: 12px;
 }
 .footer-cm{
     margin-top: 150px;
@@ -30,11 +32,16 @@
     font-size: 14px;
     line-height: 20px;
 }
+.btn__cari__mobil{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 12px;
+}
 
 /* For Mobile Portrait View */
 @media screen and (max-width: 600px)
 {
     .container-pencarian{
-       display: none; 
+        display: none;
     }
 }

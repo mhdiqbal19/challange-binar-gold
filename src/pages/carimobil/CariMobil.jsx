@@ -83,9 +83,7 @@ export const CariMobil = () => {
       <Banner />
       {!!notFound && <h4 className='dataNotFound'>Data is not available!</h4>}
       <CarList data = {!fdata.length ? data : fdata} {...props}/>
-      <div className='footer-cm'>
       <Footer/>
-      </div>
     </div>
   )
 }
