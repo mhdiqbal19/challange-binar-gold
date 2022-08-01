@@ -19,7 +19,7 @@ function Testimonial(props) {
   return (
     <section id='testimonial'>
         <Container>
-            <div className="header-testimonial">
+            <div className="title__testimonial">
                 <h5>Testimonial</h5>
                 <p>Berbagai review positif dari para pelanggan kami</p>
             </div>

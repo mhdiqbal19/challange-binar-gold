@@ -1,6 +1,6 @@
 import  { useState } from "react";
 import "./banner.css";
-import {Container, Row} from 'react-bootstrap';
+import {Col, Container, Row} from 'react-bootstrap';
 import imgCar from "./../../assets/img_car.png"
 import { Link } from "react-router-dom";
 
@@ -13,7 +13,7 @@ const Banner = () => {
     <section id="banner">
       <Container fluid className="container-banner">
           <Row className="Row">
-            <div className="col-md-6">
+            <Col md={6}>
               <div className="col-left">
                     <h1>Sewa & Rental Mobil Terbaik di kawasan Yogyakarta</h1>
                     <p>
@@ -26,12 +26,12 @@ const Banner = () => {
                      {btnShow && <button onClick={() => setBtnShow(!btnShow)} className="toggleShow">Mulai Sewa Mobil</button>}        
                     </Link>
               </div>
-            </div>
-            <div className="col-md-6">
+            </Col>
+            <Col md={6}>
               <div className="col-right">
                 <img src={imgCar} alt="" />
               </div>
-            </div>
+            </Col>
           </Row>
       </Container>
     </section>

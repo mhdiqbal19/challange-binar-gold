@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Row} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 import './faq.css';
 import { Link } from 'react-router-dom';
@@ -16,15 +16,15 @@ function Faq() {
             <button>Mulai Sewa Mobil</button>
             </Link>
           </div>
-         <div className="col-md-5">
+          <Col md={5}>
               <div className='content-faq-left'> 
                 <h5>Frequently Asked Question</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               </div>
-          </div>   
-          <div className="col-md-7">
+          </Col>   
+          <Col md={7}>
               <div className='content-faq-right'> 
-              <Accordion>
+                <Accordion>
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>Apa saja syarat yang dibutuhkan?</Accordion.Header>
                     <Accordion.Body>
@@ -57,7 +57,7 @@ function Faq() {
                   </Accordion.Item>
                 </Accordion>
               </div>
-          </div>    
+          </Col>    
       </Row>
     </Container>
   </section>
