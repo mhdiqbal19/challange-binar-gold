@@ -29,7 +29,13 @@ const CarList = (props) => {
                 </div>
                 </div>
             </Col>
-            )): <p>Loading...</p>}
+            )): 
+            <div class="text-center">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            }
         </Row>
     </Container>
   )
