@@ -7,7 +7,6 @@ import Detailmobil from "./pages/detailmobil/Detailmobil";
 export default function App() {
 
   return (
-
       <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/carimobil" element={<CariMobil/>}/>

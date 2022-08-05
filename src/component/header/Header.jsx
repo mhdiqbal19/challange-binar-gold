@@ -11,7 +11,8 @@ function Header(props) {
         <Navbar variant="light" expand={expand} className="navbar-header">
           <Container>
             <Navbar.Brand href="/">
-              <img src="https://s3-ap-southeast-1.amazonaws.com/moladin.assets/blog/wp-content/uploads/2021/10/19135936/Logo-Moladin-Terbaru-001.png" alt="" className="img-logo"/>
+              {/* <img src="https://s3-ap-southeast-1.amazonaws.com/moladin.assets/blog/wp-content/uploads/2021/10/19135936/Logo-Moladin-Terbaru-001.png" alt="" className="img-logo"/> */}
+              <h4>Binar Car Rental</h4>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas

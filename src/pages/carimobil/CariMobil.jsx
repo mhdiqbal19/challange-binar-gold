@@ -11,7 +11,7 @@ import axios from 'axios'
 
 
 export const CariMobil = () => {
-
+  
   //consium api list mobil
   const [data, setData] = useState([])
   const [fdata, setFdata] = useState([])
@@ -67,19 +67,23 @@ export const CariMobil = () => {
 
   // console.log("ini data", data);
   // console.log("ini fdata", fdata);
+
+  const [btnShow, setBtnShow] = useState(true);
   
   const props = {
     navList,
     handleChangeName,
     handleSearch,
     formatRupiah,
+    setBtnShow,
+    btnShow,
   }
 
   return (
     <div>
       <Header {...props}/>
       <Pencarian {...props}/>
-      <Banner/>
+      <Banner {...props}/>
       {!!notFound && <h4 className='dataNotFound'>Data is not available!</h4>}
       <CarList data = {!fdata.length ? data : fdata} {...props}/>
       <Footer/>

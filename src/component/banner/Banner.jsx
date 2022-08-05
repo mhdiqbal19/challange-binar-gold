@@ -1,12 +1,10 @@
-import  { useState } from "react";
 import "./banner.css";
 import {Col, Container, Row} from 'react-bootstrap';
 import imgCar from "./../../assets/img_car.png"
 import { Link } from "react-router-dom";
 
-const Banner = () => {
-
-  const [btnShow, setBtnShow] = useState(true);
+const Banner = (props) => {
+  const {btnShow, setBtnShow} = props
 
   return (
     <section id="banner">
@@ -21,7 +19,7 @@ const Banner = () => {
                   kebutuhanmu untuk sewa mobil selama 24 jam.
                 </p>                 
                 <Link to={"/carimobil"}> 
-                  {btnShow && <button onClick={() => setBtnShow(!btnShow)} className="toggleShow">Mulai Sewa Mobil</button>}        
+                  {!btnShow && <button onClick={() => setBtnShow(!btnShow)} className="toggleShow">Mulai Sewa Mobil</button>}        
                 </Link>
               </div>
             </Col>
